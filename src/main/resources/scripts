@@ -1,0 +1,47 @@
+create table etail_trn.usr
+( 
+   usr_id varchar(255) primary key, 
+   eml varchar(65),
+   frst_nm varchar(65),
+   lst_nm varchar(65),
+   usr_role_typ varchar(1),
+   pswrd varchar(65),
+   crtd_ts timestamp,
+   updtd_ts timestamp
+); 
+comment on table etail_trn.usr is 'this usr table is used to capture the user registration details for both buyer and seller type users';
+
+comment on column etail_trn.usr.usr_id is 'A unique identifier for the user. This field is the table primary key and cannot be NULL.';
+
+comment on column etail_trn.usr.eml is 'The users email address.';
+
+comment on column etail_trn.usr.frst_nm is 'The users first name.';
+
+comment on column etail_trn.usr.lst_nm is 'The users last name.';
+
+comment on column etail_trn.usr.usr_role_typ is 'The user type to identify whether the user is a Buyer or Seller [B for Buyer and S for seller]';
+
+comment on column etail_trn.usr.pswrd is 'The user password for etailing system login';
+
+comment on column etail_trn.usr.crtd_ts is 'The date and time an instance of user was first created';
+
+comment on column etail_trn.usr.updtd_ts is 'The date and time an instance of user was last updated';
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+INSERT INTO "etail_trn"."usr" ("usr_id","eml", "frst_nm", "lst_nm", "usr_role_typ", "pswrd", "crtd_ts") VALUES ('us2','nancy@gmail.com', 'Nancy', 'Book', 'B', 'LHSBDJ', '2000/12/12');
+INSERT INTO "etail_trn"."usr" ("usr_id","eml", "frst_nm", "lst_nm", "usr_role_typ", "pswrd", "crtd_ts") VALUES ('us3','bienvenu@hotmail.com', 'Georges', 'Bienvenu', 'B', 'LKGCKF', '2016/03/21');
+INSERT INTO "etail_trn"."usr" ("usr_id","eml", "frst_nm", "lst_nm", "usr_role_typ", "pswrd", "crtd_ts") VALUES ('us4','george@gmail.com', 'Philip', 'Geaorge', 'B', 'LKGCKF', '2016/03/21');
+INSERT INTO "etail_trn"."usr" ("usr_id","eml", "frst_nm", "lst_nm", "usr_role_typ", "pswrd", "crtd_ts") VALUES ('us5','steven123@hotmail.com', 'Steven', 'Smith', 'B', 'LKGCKF', '2016/03/21');
+INSERT INTO "etail_trn"."usr" ("usr_id","eml", "frst_nm", "lst_nm", "usr_role_typ", "pswrd", "crtd_ts") VALUES ('us6','ginette@gmail.com', 'Ginette', 'Beauregard', 'B', 'KGHCY', '2012/03/02');
+INSERT INTO "etail_trn"."usr" ("usr_id","eml", "frst_nm", "lst_nm", "usr_role_typ", "pswrd", "crtd_ts") VALUES ('us7','forteli@gmail.com', 'Elise', 'Fort', 'B', 'QOWUDHC', '2004/02/24');
+INSERT INTO "etail_trn"."usr" ("usr_id","eml", "frst_nm", "lst_nm", "usr_role_typ", "pswrd", "crtd_ts") VALUES ('us8','forman1982@gmail.com', 'Red', 'Forman', 'B', '97VIYGV', '2003/12/30');
+INSERT INTO "etail_trn"."usr" ("usr_id","eml", "frst_nm", "lst_nm", "usr_role_typ", "pswrd", "crtd_ts") VALUES ('us9','seangreat@gmail.com', 'Sean', 'Romero', 'B', 'OUVO8V', '2003/02/16');
+INSERT INTO "etail_trn"."usr" ("usr_id","eml", "frst_nm", "lst_nm", "usr_role_typ", "pswrd", "crtd_ts") VALUES ('us10','yung@yahoo.com', 'Yung', 'Xi', 'S', 'Y8VP8VY', '2010/10/10');
+INSERT INTO "etail_trn"."usr" ("usr_id","eml", "frst_nm", "lst_nm", "usr_role_typ", "pswrd", "crtd_ts") VALUES ('us17','abraham@gmail.com', 'roshan', 'abraham', 'B', 'YVUOT7D', '2009/11/28');
+INSERT INTO "etail_trn"."usr" ("usr_id","eml", "frst_nm", "lst_nm", "usr_role_typ", "pswrd", "crtd_ts") VALUES ('us11','sarah@gmail.com', 'Sarah', 'Mansour', 'S', 'P8YVUUG', '2017/07/02');
+INSERT INTO "etail_trn"."usr" ("usr_id","eml", "frst_nm", "lst_nm", "usr_role_typ", "pswrd", "crtd_ts") VALUES ('us12','damb@gmail.com', 'Daniel', 'Dam', 'B', '8IVYIGV', '2016/12/13');
+INSERT INTO "etail_trn"."usr" ("usr_id","eml", "frst_nm", "lst_nm", "usr_role_typ", "pswrd", "crtd_ts") VALUES ('us13','taylor124@gmail.com', 'Taylor', 'Swing', 'B', '8YVIKV', '2017/01/26');
+INSERT INTO "etail_trn"."usr" ("usr_id","eml", "frst_nm", "lst_nm", "usr_role_typ", "pswrd", "crtd_ts") VALUES ('us14','junksell@gmail.com', 'Sell', 'Junk', 'S', 'pyg8p7', '2013/02/18');
+INSERT INTO "etail_trn"."usr" ("usr_id","eml", "frst_nm", "lst_nm", "usr_role_typ", "pswrd", "crtd_ts") VALUES ('us15','dropin@gmail.com', 'Shop', 'Drop', 'S', 'P8EUBW', '2015/09/15');
+INSERT INTO "etail_trn"."usr" ("usr_id","eml", "frst_nm", "lst_nm", "usr_role_typ", "pswrd", "crtd_ts") VALUES ('us16','merlyn@gmail.com', 'Merlyn','Lillie', 'S', 'LWIEYFG', '2003/03/24');
+commit;
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------

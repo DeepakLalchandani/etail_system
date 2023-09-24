@@ -1,4 +1,4 @@
-package org.etail.etail_system;
+package org.etail;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

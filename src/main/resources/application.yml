@@ -1,0 +1,9 @@
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    password: password@123
+    url: jdbc:postgresql://localhost:5433/javacafee
+    username: postgres
+  jpa:
+    hibernate:
+      ddl-auto: update
